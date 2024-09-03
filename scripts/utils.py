@@ -129,7 +129,7 @@ def run_mapper(
 ) -> dict:
     output_dir = get_run_dir()
     base_output_dir = os.path.dirname(output_dir)
-    base_output_dir = os.path.join(base_output_dir,"vgg16_256_RRAM_de")
+    base_output_dir = os.path.join(base_output_dir,"vgg16_256_RRAM_de") // Change this everytime according to the type of cim
     print(base_output_dir)
     # results = {}
     # num_layers = len(spec.layer) 
@@ -137,7 +137,7 @@ def run_mapper(
 
     if num_layers < 17:
         # Create a directory for the current layer
-        layer_dir = create_layer_directory(base_output_dir,"vgg16_256_RRAM_de", num_layers)
+        layer_dir = create_layer_directory(base_output_dir,"vgg16_256_RRAM_de", num_layers) // Change this accordingly, has to be the same as above 
         print(f"Layer directory: {layer_dir}")
         num_layers += 1
 
