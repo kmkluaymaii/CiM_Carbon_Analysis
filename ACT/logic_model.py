@@ -89,7 +89,7 @@ class Fab_Logic():
         assert process_node in gpa_config.keys()
         assert process_node in materials_config.keys()
 
-        carbon_energy    = fab_ci * epa_config[process_node]
+        carbon_energy    = fab_ci * epa_config[process_node] * 1.1 #RRAM = 10% more EPA 
         carbon_gas       = gpa_config[process_node]
         carbon_materials = materials_config[process_node]
 
