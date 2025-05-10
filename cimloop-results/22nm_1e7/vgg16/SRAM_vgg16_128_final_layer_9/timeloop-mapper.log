@@ -1,0 +1,44 @@
+input file: /home/workspace/outputs/SRAM_vgg16_128_final/SRAM_vgg16_128_final_layer_9/parsed-processed-input.yaml
+  _______                __                
+ /_  __(_)___ ___  ___  / /___  ____  ____ 
+  / / / / __ `__ \/ _ \/ / __ \/ __ \/ __ \
+ / / / / / / / / /  __/ / /_/ / /_/ / /_/ /
+/_/ /_/_/ /_/ /_/\___/_/\____/\____/ .___/ 
+                                  /_/      
+
+Problem configuration complete.
+execute:/usr/local/bin/accelergy /home/workspace/outputs/SRAM_vgg16_128_final/SRAM_vgg16_128_final_layer_9/parsed-processed-input.yaml --oprefix timeloop-mapper. -o ./ > timeloop-mapper.accelergy.log 2>&1
+Generate Accelergy ERT (energy reference table) to replace internal energy model.
+Generate Accelergy ART (area reference table) to replace internal area model.
+Architecture configuration complete.
+Sparse optimization configuration complete.
+Using threads = 1
+Mapper configuration complete.
+WARNING: Interpreting 0 to mean full problem dimension instead of residue.
+Initializing Index Factorization subspace.
+  Factorization options along problem dimension C = 3
+  Factorization options along problem dimension M = 4
+  Factorization options along problem dimension R = 2
+  Factorization options along problem dimension S = 2
+  Factorization options along problem dimension N = 1
+  Factorization options along problem dimension P = 1
+  Factorization options along problem dimension Q = 1
+  Factorization options along problem dimension X = 1
+  Factorization options along problem dimension Y = 1
+  Factorization options along problem dimension Z = 1
+  Factorization options along problem dimension G = 1
+Mapspace Dimension [IndexFactorization] Size: 48
+Mapspace Dimension [LoopPermutation] Size: 2
+Mapspace Dimension [Spatial] Size: 1
+Mapspace Dimension [DatatypeBypass] Size: 1
+Mapspace split! Per-split Mapping Dimension [IndexFactorization] Size: 48 Residue: 0
+Mapspace construction complete.
+Search configuration complete.
+Start Parsering Layout
+No Layout specified, so using bandwidth based modeling
+[  0] Utilization = 7.03e-02 | pJ/Compute = 3.427e-05 | L9[IO] P28 Q28 - L8[] G1 S3X R3X M8X C4X - L7[O] G1 - L6[O] G1 - L5[I] G1 - L4[] G1 Y2X M64X - L3[] G1 C128Y - L2[W] G1 - L1[] G1 Z8X Y4X X8X - L0[] G1  | Cycles = 784
+[  0] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
+
+
+Summary stats for best mapping found by mapper:
+  Utilization = 7.03e-02 | pJ/Compute = 3.427e-05 | Cycles = 784
