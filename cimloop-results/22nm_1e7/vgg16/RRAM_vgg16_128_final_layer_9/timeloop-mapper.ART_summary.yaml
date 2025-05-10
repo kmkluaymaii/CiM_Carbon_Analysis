@@ -1,0 +1,44 @@
+ART_summary:
+    version: '0.4'
+    table_summary:
+      - name: system_top_level.dummy_top[1..1]
+        area: 0
+        primitive_estimations: []
+      - name: system_top_level.inter_macro_in_system_spatial[1..1]
+        area: 0
+        primitive_estimations: []
+      - name: system_top_level.adc[1..4096]
+        area: 15983.6
+        primitive_estimations:
+          - name: adc
+            estimator: ADC Plug-In
+      - name: system_top_level.column_drivers[1..4096]
+        area: 208.448
+        primitive_estimations:
+          - name: array_column_drivers
+            estimator: Neurosim Plug-In
+      - name: system_top_level.row_drivers[1..4096]
+        area: 238.226
+        primitive_estimations:
+          - name: array_row_drivers
+            estimator: Neurosim Plug-In
+      - name: system_top_level.inter_column_spatial[1..4096]
+        area: 0
+        primitive_estimations: []
+      - name: system_top_level.inter_row_spatial[1..524288]
+        area: 0
+        primitive_estimations: []
+      - name: system_top_level.cim_unit[1..67108864]
+        area: 0.01936
+        primitive_estimations:
+          - name: cell
+            estimator: Neurosim Plug-In
+      - name: system_top_level.inter_1bit_x_1bit_mac_spatial[1..67108864]
+        area: 0
+        primitive_estimations: []
+      - name: system_top_level.here_to_fix_a_bug[1..17179869184]
+        area: 0
+        primitive_estimations: []
+      - name: system_top_level.virtual_bitwise_mac[1..17179869184]
+        area: 0
+        primitive_estimations: []
