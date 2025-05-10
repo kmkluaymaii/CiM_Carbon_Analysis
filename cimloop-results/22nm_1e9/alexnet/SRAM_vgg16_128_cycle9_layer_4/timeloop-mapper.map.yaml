@@ -1,0 +1,136 @@
+mapping:
+  - target: here_to_fix_a_bug
+    type: datatype
+    keep:
+      []
+    bypass:
+      - Weights
+      - Inputs
+      - Outputs
+  - target: inter_1bit_x_1bit_mac_spatial
+    type: datatype
+    keep:
+      []
+    bypass:
+      - Weights
+      - Inputs
+      - Outputs
+  - target: cim_unit
+    type: datatype
+    keep:
+      - Weights
+    bypass:
+      - Inputs
+      - Outputs
+  - target: inter_row_spatial
+    type: datatype
+    keep:
+      []
+    bypass:
+      - Weights
+      - Inputs
+      - Outputs
+  - target: inter_column_spatial
+    type: datatype
+    keep:
+      []
+    bypass:
+      - Weights
+      - Inputs
+      - Outputs
+  - target: row_drivers
+    type: datatype
+    keep:
+      - Inputs
+    bypass:
+      - Weights
+      - Outputs
+  - target: column_drivers
+    type: datatype
+    keep:
+      - Outputs
+    bypass:
+      - Weights
+      - Inputs
+  - target: adc
+    type: datatype
+    keep:
+      - Outputs
+    bypass:
+      - Weights
+      - Inputs
+  - target: inter_macro_in_system_spatial
+    type: datatype
+    keep:
+      []
+    bypass:
+      - Weights
+      - Inputs
+      - Outputs
+  - target: dummy_top
+    type: datatype
+    keep:
+      - Inputs
+      - Outputs
+    bypass:
+      - Weights
+  - target: here_to_fix_a_bug
+    type: temporal
+    factors: C1 M1 R1 S1 N1 P1 Q1 X1 Y1 Z1 G1
+    permutation: CMRSNPQXYZG
+  - target: inter_1bit_x_1bit_mac_spatial
+    type: spatial
+    factors: C1 M1 R1 S1 N1 P1 Q1 X8 Y4 Z8 G1
+    permutation: XYZCMRSNPQG
+    split: 3
+  - target: inter_1bit_x_1bit_mac_spatial
+    type: temporal
+    factors: C1 M1 R1 S1 N1 P1 Q1 X1 Y1 Z1 G1
+    permutation: CMRSNPQXYZG
+  - target: cim_unit
+    type: temporal
+    factors: C1 M1 R1 S1 N1 P1 Q1 X1 Y1 Z1 G1
+    permutation: CMRSNPQXYZG
+  - target: inter_row_spatial
+    type: spatial
+    factors: C128 M1 R1 S1 N1 P1 Q1 X1 Y1 Z1 G1
+    permutation: CMRSNPQXYZG
+    split: 0
+  - target: inter_row_spatial
+    type: temporal
+    factors: C1 M1 R1 S1 N1 P1 Q1 X1 Y1 Z1 G1
+    permutation: CMRSNPQXYZG
+  - target: inter_column_spatial
+    type: spatial
+    factors: C1 M64 R1 S1 N1 P1 Q1 X1 Y2 Z1 G1
+    permutation: MYCRSNPQXZG
+    split: 2
+  - target: inter_column_spatial
+    type: temporal
+    factors: C1 M1 R1 S1 N1 P1 Q1 X1 Y1 Z1 G1
+    permutation: CMRSNPQXYZG
+  - target: row_drivers
+    type: temporal
+    factors: C1 M1 R1 S1 N1 P1 Q1 X1 Y1 Z1 G1
+    permutation: CMRSNPQXYZG
+  - target: column_drivers
+    type: temporal
+    factors: C1 M1 R1 S1 N1 P1 Q1 X1 Y1 Z1 G1
+    permutation: CMRSNPQXYZG
+  - target: adc
+    type: temporal
+    factors: C1 M1 R1 S1 N1 P1 Q1 X1 Y1 Z1 G1
+    permutation: CMRSNPQXYZG
+  - target: inter_macro_in_system_spatial
+    type: spatial
+    factors: C1 M2 R3 S3 N1 P1 Q1 X1 Y1 Z1 G1
+    permutation: MRSCNPQXYZG
+    split: 3
+  - target: inter_macro_in_system_spatial
+    type: temporal
+    factors: C1 M1 R1 S1 N1 P1 Q1 X1 Y1 Z1 G1
+    permutation: CMRSNPQXYZG
+  - target: dummy_top
+    type: temporal
+    factors: C1 M1 R1 S1 N1 P112 Q112 X1 Y1 Z1 G1
+    permutation: QPCMRSNXYZG
