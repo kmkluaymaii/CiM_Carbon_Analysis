@@ -1,0 +1,32 @@
+dummy_top [ Inputs:101400 (101400) Outputs:1548800 (1548800) ] 
+--------------------------------------------------------------
+| for P in [0:55)
+|   for Q in [0:55)
+
+inter_macro_in_system_spatial [ ] 
+---------------------------------
+|     for C in [0:3) (Spatial-X)
+
+adc [ Outputs:512 (512) ] 
+column_drivers [ Outputs:512 (512) ] 
+row_drivers [ Inputs:968 (968) ] 
+inter_column_spatial [ ] 
+------------------------
+|       for Y in [0:2) (Spatial-X)
+|         for M in [0:64) (Spatial-X)
+
+inter_row_spatial [ ] 
+---------------------
+|           for S in [0:11) (Spatial-Y)
+|             for R in [0:11) (Spatial-Y)
+
+cim_unit [ Weights:4 (4) ] 
+inter_1bit_x_1bit_mac_spatial [ ] 
+---------------------------------
+|               for Z in [0:8) (Spatial-X)
+|                 for Y in [0:4) (Spatial-X)
+|                   for X in [0:8) (Spatial-X)
+
+here_to_fix_a_bug [ ] 
+---------------------
+|                     << Compute >>
