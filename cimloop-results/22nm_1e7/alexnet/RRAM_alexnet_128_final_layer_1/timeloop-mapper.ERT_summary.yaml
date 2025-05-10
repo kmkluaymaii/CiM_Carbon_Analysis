@@ -1,0 +1,126 @@
+ERT_summary:
+    version: '0.4'
+    table_summary:
+      - name: system_top_level.dummy_top[1..1]
+        actions:
+          - name: read
+            energy: 0
+          - name: write
+            energy: 0
+          - name: leak
+            energy: 0
+          - name: update
+            energy: 0
+        primitive_estimation(s): []
+      - name: system_top_level.inter_macro_in_system_spatial[1..1]
+        actions:
+          - name: read
+            energy: 0
+          - name: write
+            energy: 0
+          - name: leak
+            energy: 0
+          - name: update
+            energy: 0
+        primitive_estimation(s): []
+      - name: system_top_level.adc[1..4096]
+        actions:
+          - name: read
+            energy: 0.46287
+          - name: leak
+            energy: 0.0
+          - name: write
+            energy: 0
+          - name: update
+            energy: 0
+        primitive_estimation(s):
+          - name: adc
+            estimator: ADC Plug-In
+      - name: system_top_level.column_drivers[1..4096]
+        actions:
+          - name: read
+            energy: 0.0
+          - name: leak
+            energy: 2.35418e-10
+          - name: write
+            energy: 0
+          - name: update
+            energy: 0
+        primitive_estimation(s):
+          - name: array_column_drivers
+            estimator: Neurosim Plug-In
+      - name: system_top_level.row_drivers[1..4096]
+        actions:
+          - name: read
+            energy: 0.562581
+          - name: leak
+            energy: 2.35418e-10
+          - name: write
+            energy: 0
+          - name: update
+            energy: 0
+        primitive_estimation(s):
+          - name: array_row_drivers
+            estimator: Neurosim Plug-In
+      - name: system_top_level.inter_column_spatial[1..4096]
+        actions:
+          - name: read
+            energy: 0
+          - name: write
+            energy: 0
+          - name: leak
+            energy: 0
+          - name: update
+            energy: 0
+        primitive_estimation(s): []
+      - name: system_top_level.inter_row_spatial[1..524288]
+        actions:
+          - name: read
+            energy: 0
+          - name: write
+            energy: 0
+          - name: leak
+            energy: 0
+          - name: update
+            energy: 0
+        primitive_estimation(s): []
+      - name: system_top_level.cim_unit[1..67108864]
+        actions:
+          - name: read
+            energy: 0.00355256
+          - name: write
+            energy: 64.8814
+          - name: leak
+            energy: 0.0
+          - name: update
+            energy: 0
+        primitive_estimation(s):
+          - name: cell
+            estimator: Neurosim Plug-In
+      - name: system_top_level.inter_1bit_x_1bit_mac_spatial[1..67108864]
+        actions:
+          - name: read
+            energy: 0
+          - name: write
+            energy: 0
+          - name: leak
+            energy: 0
+          - name: update
+            energy: 0
+        primitive_estimation(s): []
+      - name: system_top_level.here_to_fix_a_bug[1..17179869184]
+        actions:
+          - name: read
+            energy: 0
+          - name: write
+            energy: 0
+          - name: leak
+            energy: 0
+          - name: update
+            energy: 0
+        primitive_estimation(s): []
+      - name: system_top_level.virtual_bitwise_mac[1..17179869184]
+        actions:
+          - name: compute
+            energy: 0
+        primitive_estimation(s): []
