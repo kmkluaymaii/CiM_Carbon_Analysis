@@ -1,0 +1,1554 @@
+dumped_by_timeloop_front_end: true
+architecture:
+    version: '0.4'
+    subtree:
+      - name: system_top_level
+        attributes:
+            version: '0.4'
+            WEIGHT_BITS: 8
+            INPUT_BITS: 8
+            OUTPUT_BITS: 8
+            BATCH_SIZE: 1
+            SUPPORTED_INPUT_BITS: 8
+            SUPPORTED_WEIGHT_BITS: 8
+            SUPPORTED_OUTPUT_BITS: 8
+            VOLTAGE: 1
+            TECHNOLOGY: 22
+            ADC_AREA_SCALE: 1
+            ROW_COL_DRIVERS_AREA_SCALE: 1
+            ARRAY_WORDLINES: 128
+            ARRAY_BITLINES: 512
+            ARRAY_PARALLEL_INPUTS: 128
+            ARRAY_PARALLEL_OUTPUTS: 128
+            ARRAY_PARALLEL_WEIGHTS: 16384
+            SIGNED_SUM_ACROSS_INPUTS: false
+            SIGNED_SUM_ACROSS_WEIGHTS: false
+            CIM_UNIT_WIDTH_CELLS: 4
+            CIM_UNIT_DEPTH_CELLS: 1
+            BITS_PER_CELL: 1
+            ADC_RESOLUTION: 5
+            VOLTAGE_DAC_RESOLUTION: 1
+            TEMPORAL_DAC_RESOLUTION: 8
+            N_ADC_PER_BANK: 8
+            BASE_LATENCY: 1e-7
+            GLOBAL_CYCLE_SECONDS: 1e-09
+            READ_PULSE_WIDTH: 1e-9
+            INF: 4294967295
+            IS_SRAM: true
+            INPUTS_HIST:
+              - 0
+              - 0
+              - 0
+              - 0
+              - 0
+              - 0
+              - 0
+              - 0
+              - 0
+              - 0
+              - 0
+              - 0
+              - 0
+              - 0
+              - 0
+              - 0.592
+              - 0.0606
+              - 0.0598
+              - 0.0539
+              - 0.0491
+              - 0.0415
+              - 0.0343
+              - 0.0282
+              - 0.0219
+              - 0.0166
+              - 0.0133
+              - 0.00992
+              - 0.00715
+              - 0.00491
+              - 0.00429
+              - 0.00314
+            WEIGHTS_HIST:
+              - 0.00265
+              - 0.00371
+              - 0.00512
+              - 0.00709
+              - 0.00996
+              - 0.0133
+              - 0.0179
+              - 0.0249
+              - 0.0327
+              - 0.0421
+              - 0.0521
+              - 0.0618
+              - 0.0717
+              - 0.078
+              - 0.081
+              - 0.0811
+              - 0.0765
+              - 0.0691
+              - 0.0598
+              - 0.0495
+              - 0.0397
+              - 0.0309
+              - 0.024
+              - 0.018
+              - 0.0136
+              - 0.0101
+              - 0.00777
+              - 0.00572
+              - 0.00442
+              - 0.0032
+              - 0.00257
+            OUTPUTS_HIST:
+              - 0.00656
+              - 0.00997
+              - 0.0163
+              - 0.0219
+              - 0.0316
+              - 0.0422
+              - 0.0507
+              - 0.0624
+              - 0.0721
+              - 0.0802
+              - 0.0815
+              - 0.0821
+              - 0.0792
+              - 0.0732
+              - 0.0623
+              - 0.055
+              - 0.0432
+              - 0.033
+              - 0.0268
+              - 0.0192
+              - 0.0158
+              - 0.0106
+              - 0.00742
+              - 0.00585
+              - 0.00399
+              - 0.0024
+              - 0.00165
+              - 0.00115
+              - 0.000646
+              - 0.000525
+              - 0.000444
+            CELL_CONFIG: "/home/workspace/models/memory_cells/sram_example.cell.yaml"
+            VOLTAGE_ENERGY_SCALE: 1
+            VOLTAGE_LATENCY_SCALE: 1.0
+            ADC_ENERGY_SCALE: 1
+            ENCODED_INPUT_BITS: 8
+            ENCODED_WEIGHT_BITS: 8
+            ENCODED_OUTPUT_BITS: 8
+            INPUT_ENCODING_FUNC: offset_encode_hist
+            WEIGHT_ENCODING_FUNC: offset_encode_hist
+            DAC_RESOLUTION: 8
+            _IN_B: 8
+            _W_B: 8
+            INPUT_BITS_PER_SLICE: 8
+            WEIGHT_BITS_PER_SLICE: 4
+            N_INPUT_SLICES: 1
+            N_WEIGHT_SLICES: 2
+            N_VIRTUAL_MACS: 256
+            _EHTAS: encoded_hist_to_avg_slice
+            _IN_ENC_FN: INPUT_ENCODING_FUNC
+            _W_ENC_FN: WEIGHT_ENCODING_FUNC
+            AVERAGE_INPUT_VALUE: 0.5507444929181431
+            AVERAGE_WEIGHT_VALUE: 0.4814221857781422
+            INPUT_BIT_DISTRIBUTION:
+              - 0.408360899851091
+              - 0.650912943104706
+              - 0.7297948251566545
+              - 0.7648434454982461
+              - 0.7813633683453093
+              - 0.6670550963912013
+              - 0.6670550963912013
+              - 0.6670550963912013
+            WEIGHT_BIT_DISTRIBUTION:
+              - 0.41487585124148774
+              - 0.5478745212547875
+              - 0.5006449935500646
+              - 0.49836501634983665
+              - 0.49851501484985167
+              - 0.4920550794492056
+              - 0.4920550794492056
+              - 0.4920550794492056
+            has_power_gating: true
+            power_gated_at: null
+        local:
+          - name: dummy_top[1..1]
+            attributes:
+                depth: 4294967295
+                width: 1
+                datawidth: 1
+                has_power_gating: false
+                n_banks: 2
+                cluster_size: 1
+                reduction_supported: true
+                multiple_buffering: 1
+                min_utilization: 0
+                allow_overbooking: false
+                meshX: 1
+                meshY: 1
+                power_gated_at: null
+            class: dummy_storage
+            required_actions:
+              - leak
+              - update
+              - write
+              - read
+            enabled: true
+          - name: inter_macro_in_system_spatial[1..1]
+            class: dummy_storage
+            attributes:
+                width: 1
+                depth: 1
+                datawidth: 1
+                technology: -1
+                has_power_gating: false
+                n_banks: 2
+                cluster_size: 1
+                reduction_supported: true
+                multiple_buffering: 1
+                min_utilization: 0
+                allow_overbooking: false
+                meshX: 1
+                meshY: 1
+                power_gated_at: null
+            enabled: true
+          - name: adc[1..4096]
+            subclass: adc
+            attributes:
+                width: 8
+                datawidth: 1
+                depth: 4294967295
+                rows: 128
+                cols: 512
+                cols_active_at_once: 128
+                cell_config: "/home/workspace/models/memory_cells/sram_example.cell.yaml"
+                average_input_value: 0.5507444929181431
+                average_cell_value: 0.4814221857781422
+                cycle_seconds: 1e-09
+                voltage: 1
+                temporal_dac_bits: 8
+                read_pulse_width: 1e-9
+                resolution: 5
+                n_adcs: 8
+                adc_energy_scale: 1
+                adc_area_scale: 1
+                has_power_gating: false
+                n_banks: 2
+                cluster_size: 1
+                reduction_supported: true
+                multiple_buffering: 1
+                min_utilization: 0
+                allow_overbooking: false
+                meshX: 4096
+                meshY: 1
+                power_gated_at: null
+            class: dummy_storage
+            required_actions:
+              - leak
+              - update
+              - write
+              - read
+            enabled: true
+          - name: column_drivers[1..4096]
+            subclass: column_drivers
+            attributes:
+                width: 8
+                datawidth: 1
+                depth: 4294967295
+                rows: 128
+                cols: 512
+                cols_active_at_once: 128
+                cell_config: "/home/workspace/models/memory_cells/sram_example.cell.yaml"
+                average_input_value: 0.5507444929181431
+                average_cell_value: 0.4814221857781422
+                cycle_seconds: 1e-09
+                voltage: 1
+                temporal_dac_bits: 8
+                read_pulse_width: 1e-9
+                resolution: 5
+                n_adcs: 8
+                adc_energy_scale: 1
+                adc_area_scale: 1
+                has_power_gating: false
+                n_banks: 2
+                cluster_size: 1
+                reduction_supported: true
+                multiple_buffering: 1
+                min_utilization: 0
+                allow_overbooking: false
+                meshX: 4096
+                meshY: 1
+                power_gated_at: null
+            class: dummy_storage
+            required_actions:
+              - leak
+              - update
+              - write
+              - read
+            enabled: true
+          - name: row_drivers[1..4096]
+            subclass: input_row_drivers
+            attributes:
+                width: 8
+                temporal_spiking: true
+                rows: 128
+                cols: 512
+                cols_active_at_once: 128
+                cell_config: "/home/workspace/models/memory_cells/sram_example.cell.yaml"
+                average_input_value: 0.5507444929181431
+                average_cell_value: 0.4814221857781422
+                cycle_seconds: 1e-09
+                voltage: 1
+                temporal_dac_bits: 8
+                read_pulse_width: 1e-9
+                resolution: 5
+                n_adcs: 8
+                adc_energy_scale: 1
+                adc_area_scale: 1
+                datawidth: 1
+                depth: 4294967295
+                has_power_gating: false
+                n_banks: 2
+                cluster_size: 1
+                reduction_supported: true
+                multiple_buffering: 1
+                min_utilization: 0
+                allow_overbooking: false
+                meshX: 4096
+                meshY: 1
+                power_gated_at: null
+            class: dummy_storage
+            required_actions:
+              - leak
+              - update
+              - write
+              - read
+            enabled: true
+          - name: inter_column_spatial[1..4096]
+            class: dummy_storage
+            attributes:
+                width: 1
+                depth: 1
+                datawidth: 1
+                technology: -1
+                has_power_gating: false
+                n_banks: 2
+                cluster_size: 1
+                reduction_supported: true
+                multiple_buffering: 1
+                min_utilization: 0
+                allow_overbooking: false
+                meshX: 4096
+                meshY: 1
+                power_gated_at: null
+                _is_CiM: true
+            enabled: true
+          - name: inter_row_spatial[1..524288]
+            class: dummy_storage
+            attributes:
+                width: 1
+                depth: 1
+                datawidth: 1
+                technology: -1
+                has_power_gating: false
+                n_banks: 2
+                cluster_size: 1
+                reduction_supported: true
+                multiple_buffering: 1
+                min_utilization: 0
+                allow_overbooking: false
+                meshX: 524288
+                meshY: 1
+                power_gated_at: null
+                _is_CiM: true
+            enabled: true
+          - name: cim_unit[1..67108864]
+            subclass: cell
+            attributes:
+                width: 4
+                depth: 1
+                width_cells: 4
+                depth_cells: 1
+                rows: 128
+                cols: 512
+                cols_active_at_once: 128
+                cell_config: "/home/workspace/models/memory_cells/sram_example.cell.yaml"
+                average_input_value: 0.5507444929181431
+                average_cell_value: 0.4814221857781422
+                cycle_seconds: 1e-09
+                voltage: 1
+                temporal_dac_bits: 8
+                read_pulse_width: 1e-9
+                resolution: 5
+                n_adcs: 8
+                adc_energy_scale: 1
+                adc_area_scale: 1
+                datawidth: 1
+                has_power_gating: false
+                n_banks: 2
+                cluster_size: 1
+                reduction_supported: true
+                multiple_buffering: 1
+                min_utilization: 0
+                allow_overbooking: false
+                meshX: 524288
+                meshY: 128
+                power_gated_at: null
+                _is_CiM: true
+            class: dummy_storage
+            required_actions:
+              - leak
+              - update
+              - write
+              - read
+            enabled: true
+          - name: inter_1bit_x_1bit_mac_spatial[1..67108864]
+            class: dummy_storage
+            attributes:
+                width: 1
+                depth: 1
+                datawidth: 1
+                technology: -1
+                has_power_gating: false
+                n_banks: 2
+                cluster_size: 1
+                reduction_supported: true
+                multiple_buffering: 1
+                min_utilization: 0
+                allow_overbooking: false
+                meshX: 524288
+                meshY: 128
+                power_gated_at: null
+                _is_CiM: true
+            enabled: true
+          - name: here_to_fix_a_bug[1..17179869184]
+            attributes:
+                width: 1
+                depth: 1
+                datawidth: 1
+                has_power_gating: false
+                n_banks: 2
+                cluster_size: 1
+                reduction_supported: true
+                multiple_buffering: 1
+                min_utilization: 0
+                allow_overbooking: false
+                meshX: 134217728
+                meshY: 128
+                power_gated_at: null
+                _is_CiM: true
+            class: dummy_storage
+            required_actions:
+              - leak
+              - update
+              - write
+              - read
+            enabled: true
+          - name: virtual_bitwise_mac[1..17179869184]
+            class: free_mac
+            attributes:
+                has_power_gating: false
+                meshX: 134217728
+                meshY: 128
+                power_gated_at: null
+                _is_CiM: true
+            required_actions:
+              - compute
+            enabled: true
+architecture_constraints:
+    targets:
+      - type: bypass
+        bypass:
+          - Weights
+        keep:
+          - Inputs
+          - Outputs
+        target: dummy_top
+      - factors: P=-1,Q=-1,N=-1
+        permutation: XYZQPNGCMRS
+        rmw_first_update:
+          - Weights
+          - Inputs
+          - Outputs
+        type: temporal
+        target: dummy_top
+      - type: spatial
+        factors: X=1,Q=1,P=1,Z=1,N=1
+        permutation: NPQXCMRSYZG
+        no_link_transfer:
+          - Inputs
+          - Outputs
+          - Weights
+        split: 999
+        target: inter_macro_in_system_spatial
+      - factors: C=1,M=1,R=1,S=1,N=1,P=1,Q=1,X=1,Y=1,Z=1,G=1
+        permutation: CMRSNPQXYZG
+        type: temporal
+        target: inter_macro_in_system_spatial
+      - bypass:
+          - Weights
+          - Inputs
+          - Outputs
+        type: bypass
+        target: inter_macro_in_system_spatial
+      - rmw_first_update:
+          - Weights
+          - Inputs
+          - Outputs
+        type: temporal
+        factors: C=1,M=1,R=1,S=1,N=1,P=1,Q=1,X=1,Y=1,Z=1,G=1
+        permutation: GZYXQPNSRMC
+        target: adc
+      - no_coalesce:
+          - Weights
+          - Inputs
+          - Outputs
+        type: bypass
+        bypass:
+          - Inputs
+          - Weights
+        keep:
+          - Outputs
+        target: adc
+      - rmw_first_update:
+          - Weights
+          - Inputs
+          - Outputs
+        type: temporal
+        factors: C=1,M=1,R=1,S=1,N=1,P=1,Q=1,X=1,Y=1,Z=1,G=1
+        permutation: GZYXQPNSRMC
+        target: column_drivers
+      - no_coalesce:
+          - Weights
+          - Inputs
+          - Outputs
+        type: bypass
+        bypass:
+          - Inputs
+          - Weights
+        keep:
+          - Outputs
+        target: column_drivers
+      - rmw_first_update:
+          - Weights
+          - Inputs
+          - Outputs
+        type: temporal
+        factors: C=1,M=1,R=1,S=1,N=1,P=1,Q=1,X=1,Y=1,Z=1,G=1
+        permutation: GZYXQPNSRMC
+        target: row_drivers
+      - no_coalesce:
+          - Weights
+          - Inputs
+          - Outputs
+        type: bypass
+        bypass:
+          - Weights
+          - Outputs
+        keep:
+          - Inputs
+        target: row_drivers
+      - type: spatial
+        factors: N=1,C=1,R=1,P=1,S=1,Q=1,X=1,G=1,Y=2,M=64
+        permutation: NPQXCMRSYZG
+        no_reuse:
+          - Outputs
+          - Weights
+        no_link_transfer:
+          - Inputs
+          - Outputs
+          - Weights
+        split: 99999
+        target: inter_column_spatial
+      - factors: C=1,M=1,R=1,S=1,N=1,P=1,Q=1,X=1,Y=1,Z=1,G=1
+        permutation: CMRSNPQXYZG
+        type: temporal
+        target: inter_column_spatial
+      - bypass:
+          - Weights
+          - Inputs
+          - Outputs
+        type: bypass
+        target: inter_column_spatial
+      - type: spatial
+        factors: X=1,N=1,M=1,Q=1,P=1,Z=1,G=1,C=128,R=1,S=1
+        permutation: NPQXCMRSYZG
+        no_reuse:
+          - Inputs
+          - Weights
+        no_link_transfer:
+          - Inputs
+          - Outputs
+          - Weights
+        split: 0
+        target: inter_row_spatial
+      - factors: C=1,M=1,R=1,S=1,N=1,P=1,Q=1,X=1,Y=1,Z=1,G=1
+        permutation: CMRSNPQXYZG
+        type: temporal
+        target: inter_row_spatial
+      - bypass:
+          - Weights
+          - Inputs
+          - Outputs
+        type: bypass
+        target: inter_row_spatial
+      - type: bypass
+        bypass:
+          - Inputs
+          - Outputs
+        keep:
+          - Weights
+        target: cim_unit
+      - permutation: GXNSRQPCM
+        factors: P=1,Q=1,R=1,S=1,N=1,X=1,C=1,M=1
+        type: temporal
+        target: cim_unit
+      - type: spatial
+        factors: X=8,Y=4,Z=0,C=1,M=1,R=1,S=1,N=1,P=1,Q=1,G=1
+        permutation: NPQXCMRSYZG
+        split: 999
+        target: inter_1bit_x_1bit_mac_spatial
+      - factors: C=1,M=1,R=1,S=1,N=1,P=1,Q=1,X=1,Y=1,Z=1,G=1
+        permutation: CMRSNPQXYZG
+        type: temporal
+        target: inter_1bit_x_1bit_mac_spatial
+      - bypass:
+          - Weights
+          - Inputs
+          - Outputs
+        type: bypass
+        target: inter_1bit_x_1bit_mac_spatial
+      - rmw_first_update:
+          - Weights
+          - Inputs
+          - Outputs
+        permutation: NPQXCMRSYZG
+        type: temporal
+        factors: C=1,M=1,R=1,S=1,N=1,P=1,Q=1,X=1,Y=1,Z=1,G=1
+        target: here_to_fix_a_bug
+      - no_coalesce:
+          - Weights
+          - Inputs
+          - Outputs
+        type: bypass
+        bypass:
+          - Inputs
+          - Weights
+          - Outputs
+        target: here_to_fix_a_bug
+problem:
+    instance:
+        C: 256
+        M: 256
+        P: 14
+        Q: 14
+        R: 3
+        S: 3
+        N: 1
+        X: 8
+        H: 1
+        W: 1
+        G: 1
+        Y: 8
+        Hdilation: 1
+        Hstride: 1
+        Wdilation: 1
+        Wstride: 1
+        Z: 8
+        densities: {}
+    version: '0.4'
+    shape:
+        coefficients:
+          - name: Wstride
+            default: 1
+          - name: Hstride
+            default: 1
+          - name: Wdilation
+            default: 1
+          - name: Hdilation
+            default: 1
+        data_spaces:
+          - name: Weights
+            projection:
+              -   -   - C
+              -   -   - M
+              -   -   - R
+              -   -   - S
+              -   -   - Y
+              -   -   - G
+            read_write: false
+          - name: Inputs
+            projection:
+              -   -   - N
+              -   -   - C
+              -   -   - R
+                      - Wdilation
+                  -   - P
+                      - Wstride
+              -   -   - S
+                      - Hdilation
+                  -   - Q
+                      - Hstride
+              -   -   - X
+              -   -   - G
+            read_write: false
+          - name: Outputs
+            projection:
+              -   -   - N
+              -   -   - M
+              -   -   - Q
+              -   -   - P
+              -   -   - Z
+              -   -   - G
+            read_write: true
+        dimensions:
+          - C
+          - M
+          - R
+          - S
+          - N
+          - P
+          - Q
+          - X
+          - Y
+          - Z
+          - G
+        name: ''
+compound_components:
+    version: '0.4'
+    classes:
+      - name: input_row_drivers
+        attributes:
+            rows: "must_specify"
+            cols: "must_specify"
+            cols_active_at_once: "must_specify"
+            technology: "must_specify"
+            cell_config: "must_specify"
+            average_input_value: "must_specify"
+            average_cell_value: "must_specify"
+            cycle_seconds: "must_specify"
+            voltage_dac_bits: null
+            temporal_dac_bits: null
+            temporal_spiking: null
+            read_pulse_width: "must_specify"
+            voltage: "must_specify"
+            threshold_voltage: 0
+            sequential: false
+            resolution: "must_specify"
+            n_adcs: "must_specify"
+            adc_energy_scale: 1
+            adc_area_scale: 1
+        subcomponents:
+          - name: array_row_drivers
+            class: array_row_drivers
+            attributes:
+                rows: rows
+                cols: cols
+                cols_active_at_once: cols_active_at_once
+                cell_config: cell_config
+                average_input_value: average_input_value
+                average_cell_value: average_cell_value
+                cycle_seconds: cycle_seconds
+                voltage_dac_bits: voltage_dac_bits
+                temporal_dac_bits: temporal_dac_bits
+                temporal_spiking: temporal_spiking
+                read_pulse_width: read_pulse_width
+                voltage: voltage
+                threshold_voltage: threshold_voltage
+                sequential: sequential
+            area_scale: ROW_COL_DRIVERS_AREA_SCALE
+        actions:
+          - name: read
+            subcomponents:
+              - name: array_row_drivers
+                actions:
+                  - name: read
+          - name: leak
+            subcomponents:
+              - name: array_row_drivers
+                actions:
+                  - name: leak
+          - name: write
+            subcomponents: []
+          - name: update
+            subcomponents: []
+      - name: weight_row_drivers
+        attributes:
+            rows: "must_specify"
+            cols: "must_specify"
+            cols_active_at_once: "must_specify"
+            technology: "must_specify"
+            cell_config: "must_specify"
+            average_input_value: "must_specify"
+            average_cell_value: "must_specify"
+            cycle_seconds: "must_specify"
+            voltage_dac_bits: null
+            temporal_dac_bits: null
+            temporal_spiking: null
+            read_pulse_width: "must_specify"
+            voltage: "must_specify"
+            threshold_voltage: 0
+            sequential: false
+            resolution: "must_specify"
+            n_adcs: "must_specify"
+            adc_energy_scale: 1
+            adc_area_scale: 1
+        subcomponents:
+          - name: array_row_drivers
+            class: array_row_drivers
+            attributes:
+                rows: rows
+                cols: cols
+                cols_active_at_once: cols_active_at_once
+                cell_config: cell_config
+                average_input_value: average_input_value
+                average_cell_value: average_cell_value
+                cycle_seconds: cycle_seconds
+                voltage_dac_bits: voltage_dac_bits
+                temporal_dac_bits: temporal_dac_bits
+                temporal_spiking: temporal_spiking
+                read_pulse_width: read_pulse_width
+                voltage: voltage
+                threshold_voltage: threshold_voltage
+                sequential: sequential
+            area_scale: ROW_COL_DRIVERS_AREA_SCALE
+        actions:
+          - name: read
+            subcomponents:
+              - name: array_row_drivers
+                actions:
+                  - name: write
+          - name: write
+            subcomponents: []
+          - name: leak
+            subcomponents:
+              - name: array_row_drivers
+                actions:
+                  - name: leak
+          - name: update
+            subcomponents: []
+      - name: cell
+        attributes:
+            width_cells: "must_specify"
+            depth_cells: "must_specify"
+            rows: "must_specify"
+            cols: "must_specify"
+            cols_active_at_once: "must_specify"
+            technology: "must_specify"
+            cell_config: "must_specify"
+            average_input_value: "must_specify"
+            average_cell_value: "must_specify"
+            cycle_seconds: "must_specify"
+            voltage_dac_bits: null
+            temporal_dac_bits: null
+            temporal_spiking: null
+            read_pulse_width: "must_specify"
+            voltage: "must_specify"
+            threshold_voltage: 0
+            sequential: false
+            resolution: "must_specify"
+            n_adcs: "must_specify"
+            adc_energy_scale: 1
+            adc_area_scale: 1
+        subcomponents:
+          - name: cell
+            class: memory_cell
+            attributes:
+                adc_resolution: 0
+                rows: rows
+                cols: cols
+                cols_active_at_once: cols_active_at_once
+                cell_config: cell_config
+                average_input_value: average_input_value
+                average_cell_value: average_cell_value
+                cycle_seconds: cycle_seconds
+                voltage_dac_bits: voltage_dac_bits
+                temporal_dac_bits: temporal_dac_bits
+                temporal_spiking: temporal_spiking
+                read_pulse_width: read_pulse_width
+                voltage: voltage
+                threshold_voltage: threshold_voltage
+                sequential: sequential
+            area_scale: width_cells * depth_cells
+        actions:
+          - name: read
+            subcomponents:
+              - name: cell
+                actions:
+                  - name: read
+                    energy_scale: width_cells
+          - name: write
+            subcomponents:
+              - name: cell
+                actions:
+                  - name: write
+                    energy_scale: width_cells
+          - name: leak
+            subcomponents:
+              - name: cell
+                actions:
+                  - name: leak
+                    energy_scale: width_cells * depth_cells
+          - name: update
+            subcomponents: []
+      - name: adc
+        attributes:
+            resolution: "must_specify"
+            n_adcs: "must_specify"
+            adc_estimator_plug_in: None
+            cell_config: None
+            throughput_scale: 1
+            rows: "must_specify"
+            cols: "must_specify"
+            cols_active_at_once: "must_specify"
+            technology: "must_specify"
+            average_input_value: "must_specify"
+            average_cell_value: "must_specify"
+            cycle_seconds: "must_specify"
+            voltage_dac_bits: null
+            temporal_dac_bits: null
+            temporal_spiking: null
+            read_pulse_width: "must_specify"
+            voltage: "must_specify"
+            threshold_voltage: 0
+            sequential: false
+            adc_energy_scale: 1
+            adc_area_scale: 1
+        subcomponents:
+          - name: adc
+            class: array_adc
+            attributes:
+                n_adcs: n_adcs
+                adc_resolution: resolution
+                resolution: resolution
+                throughput: 1 / cycle_seconds * cols_active_at_once * throughput_scale
+                plug_in: adc_estimator_plug_in
+                rows: rows
+                cols: cols
+                cols_active_at_once: cols_active_at_once
+                cell_config: cell_config
+                average_input_value: average_input_value
+                average_cell_value: average_cell_value
+                cycle_seconds: cycle_seconds
+                voltage_dac_bits: voltage_dac_bits
+                temporal_dac_bits: temporal_dac_bits
+                temporal_spiking: temporal_spiking
+                read_pulse_width: read_pulse_width
+                voltage: voltage
+                threshold_voltage: threshold_voltage
+                sequential: sequential
+            area_scale: adc_area_scale
+        actions:
+          - name: read
+            subcomponents:
+              - name: adc
+                actions:
+                  - name: read
+                    energy_scale: adc_energy_scale
+          - name: leak
+            subcomponents:
+              - name: adc
+                actions:
+                  - name: leak
+          - name: write
+            subcomponents: []
+          - name: update
+            subcomponents: []
+      - name: column_drivers
+        attributes:
+            rows: "must_specify"
+            cols: "must_specify"
+            cols_active_at_once: "must_specify"
+            technology: "must_specify"
+            cell_config: "must_specify"
+            average_input_value: "must_specify"
+            average_cell_value: "must_specify"
+            cycle_seconds: "must_specify"
+            voltage_dac_bits: null
+            temporal_dac_bits: null
+            temporal_spiking: null
+            read_pulse_width: "must_specify"
+            voltage: "must_specify"
+            threshold_voltage: 0
+            sequential: false
+            resolution: "must_specify"
+            n_adcs: "must_specify"
+            adc_energy_scale: 1
+            adc_area_scale: 1
+        subcomponents:
+          - name: array_column_drivers
+            class: array_col_drivers
+            attributes:
+                rows: rows
+                cols: cols
+                cols_active_at_once: cols_active_at_once
+                cell_config: cell_config
+                average_input_value: average_input_value
+                average_cell_value: average_cell_value
+                cycle_seconds: cycle_seconds
+                voltage_dac_bits: voltage_dac_bits
+                temporal_dac_bits: temporal_dac_bits
+                temporal_spiking: temporal_spiking
+                read_pulse_width: read_pulse_width
+                voltage: voltage
+                threshold_voltage: threshold_voltage
+                sequential: sequential
+            area_scale: ROW_COL_DRIVERS_AREA_SCALE
+        actions:
+          - name: read
+            subcomponents:
+              - name: array_column_drivers
+                actions:
+                  - name: read
+          - name: leak
+            subcomponents:
+              - name: array_column_drivers
+                actions:
+                  - name: leak
+          - name: write
+            subcomponents: []
+          - name: update
+            subcomponents: []
+      - name: free_mac
+        subcomponents: []
+        attributes: {}
+        actions:
+          - name: compute
+            subcomponents: []
+      - name: dummy_storage
+        subcomponents: []
+        attributes: {}
+        actions:
+          - name: read
+            subcomponents: []
+          - name: write
+            subcomponents: []
+          - name: leak
+            subcomponents: []
+          - name: update
+            subcomponents: []
+      - name: smartbuffer_sram
+        attributes:
+            technology: "must_specify"
+            width: "must_specify"
+            depth: "must_specify"
+            n_rw_ports: 1
+            global_cycle_seconds: "must_specify"
+        subcomponents:
+          - name: storage
+            class: SRAM
+            attributes:
+                width: width
+                depth: depth
+                n_rw_ports: n_rw_ports
+                technology: technology
+                global_cycle_seconds: global_cycle_seconds
+          - name: address_generator
+            class: intadder
+            attributes:
+                n_instances: 2
+                n_bits: max(1, ceil(log2(depth))) if depth >= 1 else 1
+                precision: max(1, ceil(log2(depth))) if depth >= 1 else 1
+                datawidth: max(1, ceil(log2(depth))) if depth >= 1 else 1
+                global_cycle_seconds: global_cycle_seconds
+        actions:
+          - name: write
+            subcomponents:
+              - name: storage
+                actions:
+                  - name: write
+              - name: address_generator
+                actions:
+                  - name: add
+          - name: read
+            subcomponents:
+              - name: storage
+                actions:
+                  - name: read
+              - name: address_generator
+                actions:
+                  - name: add
+          - name: leak
+            subcomponents:
+              - name: storage
+                actions:
+                  - name: leak
+              - name: address_generator
+                actions:
+                  - name: leak
+          - name: update
+            subcomponents:
+              - name: storage
+                actions:
+                  - name: write
+              - name: address_generator
+                actions:
+                  - name: add
+      - name: c2c_multiplier
+        attributes:
+            resolution: resolution
+            voltage: voltage
+            unit_capacitance: 1e-15
+            a_hist: a_hist
+            b_bit_distribution: b_bit_distribution
+            a_rms: (sum(i ** 2 * prob for i, prob in enumerate(a_hist)) / sum(a_hist))
+                ** 0.5 * voltage / (len(a_hist) - 1)
+            b_lo2hi_probability: sum(prob * (1 - prob) for prob in b_bit_distribution)
+                / len(b_bit_distribution)
+            capacitors_are_stacked: 0
+            technology: technology
+            cap_f_per_m2: None
+            ref_node_equivalent_capacitance_scale: 1.67 / resolution
+        subcomponents:
+          - name: unit_cap[1..resolution]
+            class: capacitor
+            attributes:
+                capacitance: unit_capacitance
+                voltage: voltage
+                stacked: capacitors_are_stacked
+                cap_f_per_m2: cap_f_per_m2
+          - name: unit2_cap[1..resolution]
+            class: capacitor
+            attributes:
+                capacitance: unit_capacitance * 2
+                voltage: voltage
+                stacked: capacitors_are_stacked
+                cap_f_per_m2: cap_f_per_m2
+          - name: control_pass_gate[1..resolution]
+            class: pass_gate
+            attributes:
+                technology: technology
+                n_instances: 2
+          - name: inverter[1..resolution]
+            class: not_gate
+            attributes:
+                technology: technology
+                n_instances: 2
+        actions:
+          - name: switch_a
+            subcomponents:
+              - name: unit_cap[1..resolution]
+                actions:
+                  - name: switch
+                    arguments:
+                        value_probabilities: a_hist
+                        zero_between_values: false
+                    energy_scale: ref_node_equivalent_capacitance_scale
+              - name: unit2_cap[1..resolution]
+                actions:
+                  - name: switch
+                    arguments:
+                        value_probabilities: a_hist
+                        zero_between_values: false
+                    energy_scale: ref_node_equivalent_capacitance_scale
+          - name: switch_b
+            subcomponents:
+              - name: unit_cap[1..resolution]
+                actions:
+                  - name: raise_voltage_to
+                    arguments:
+                        target_voltage: a_rms
+                    energy_scale: b_lo2hi_probability * 1
+              - name: unit2_cap[1..resolution]
+                actions:
+                  - name: raise_voltage_to
+                    arguments:
+                        target_voltage: a_rms
+                    energy_scale: b_lo2hi_probability * 1
+      - name: c2c_mult_input_port_a
+        attributes:
+            resolution: resolution
+            voltage: voltage
+            unit_capacitance: 1e-15
+            a_hist: a_hist
+            b_bit_distribution: b_bit_distribution
+            ref_node_equivalent_capacitance_scale: 1.67 / 8
+            cap_f_per_m2: None
+        subcomponents:
+          - name: c2c_multiplier
+            class: c2c_multiplier
+            attributes:
+                resolution: resolution
+                voltage: voltage
+                unit_capacitance: unit_capacitance
+                a_hist: a_hist
+                b_bit_distribution: b_bit_distribution
+                ref_node_equivalent_capacitance_scale: ref_node_equivalent_capacitance_scale
+                cap_f_per_m2: cap_f_per_m2
+        actions:
+          - name: write
+            subcomponents: []
+          - name: update
+            subcomponents: []
+          - name: read
+            subcomponents:
+              - name: c2c_multiplier
+                actions:
+                  - name: switch_a
+          - name: write
+            subcomponents:
+              - name: c2c_multiplier
+                actions:
+                  - name: switch_a
+          - name: leak
+            subcomponents: []
+      - name: c2c_mult_input_port_b
+        attributes:
+            resolution: resolution
+            voltage: voltage
+            unit_capacitance: 1e-15
+            a_hist: a_hist
+            b_bit_distribution: b_bit_distribution
+            ref_node_equivalent_capacitance_scale: 1.67 / 8
+            cap_f_per_m2: None
+        subcomponents:
+          - name: c2c_multiplier
+            class: c2c_multiplier
+            attributes:
+                resolution: resolution
+                voltage: voltage
+                unit_capacitance: unit_capacitance
+                a_hist: a_hist
+                b_bit_distribution: b_bit_distribution
+                ref_node_equivalent_capacitance_scale: ref_node_equivalent_capacitance_scale
+                cap_f_per_m2: cap_f_per_m2
+            area_scale: 0
+        actions:
+          - name: write
+            subcomponents: []
+          - name: update
+            subcomponents: []
+          - name: read
+            subcomponents:
+              - name: c2c_multiplier
+                actions:
+                  - name: switch_b
+          - name: leak
+            subcomponents: []
+      - name: shift_add_unit
+        attributes:
+            technology: "must_specify"
+            n_bits: "must_specify"
+            shift_register_n_bits: "must_specify"
+            cycle_seconds: "must_specify"
+        subcomponents:
+          - name: shift_add
+            class: shift_add
+            attributes:
+                n_bits: n_bits
+                shift_register_n_bits: shift_register_n_bits
+                width: shift_register_n_bits
+                cycle_seconds: cycle_seconds
+        actions:
+          - name: read
+            subcomponents:
+              - name: shift_add
+                actions:
+                  - name: shift_add
+          - name: shift_add
+            subcomponents:
+              - name: shift_add
+                actions:
+                  - name: shift_add
+          - name: write
+            subcomponents: {}
+          - name: leak
+            subcomponents:
+              - name: shift_add
+                actions:
+                  - name: leak
+          - name: update
+            subcomponents: []
+      - name: dac_x2x_ladder
+        attributes:
+            resolution: resolution
+            voltage: voltage
+            unit_capacitance: 1e-12
+            unit_resistance: 5e3
+            zero_between_values: zero_between_values
+            scale_x2x_energy_by: 1
+            scale_active_energy_by: 1
+            hist: hist
+            bit_distribution: bit_distribution
+            bit_flip_probability: sum(prob * (1 - prob) for prob in bit_distribution)
+                / len(bit_distribution)
+        subcomponents:
+          - name: DAC
+            class: LADDER_TYPE_REPLACE_ME
+            attributes:
+                resolution: resolution
+                voltage: voltage
+                unit_capacitance: unit_capacitance
+                unit_resistance: unit_resistance
+                hist: hist
+          - name: flip_flops
+            class: flip_flop
+            attributes:
+                n_bits: resolution
+        actions:
+          - name: convert
+            subcomponents:
+              - name: "DAC"
+                actions:
+                  - name: convert
+                    arguments: {}
+                    energy_scale: scale_x2x_energy_by * scale_active_energy_by
+              - name: "flip_flops"
+                actions:
+                  - name: read
+                    energy_scale: bit_flip_probability * scale_active_energy_by
+          - name: write
+            subcomponents: []
+          - name: update
+            subcomponents: []
+          - name: read
+            subcomponents: []
+          - name: leak
+            subcomponents:
+              - name: "DAC"
+                actions:
+                  - name: leak
+              - name: "flip_flops"
+                actions:
+                  - name: leak
+          - name: read
+            subcomponents:
+              - name: "DAC"
+                actions:
+                  - name: convert
+                    arguments: {}
+                    energy_scale: scale_x2x_energy_by * scale_active_energy_by
+              - name: "flip_flops"
+                actions:
+                  - name: read
+                    energy_scale: bit_flip_probability * scale_active_energy_by
+      - name: dac_r2r_ladder_compound
+        attributes:
+            resolution: resolution
+            voltage: voltage
+            unit_capacitance: 1e-12
+            unit_resistance: 5e3
+            zero_between_values: zero_between_values
+            scale_x2x_energy_by: 1
+            scale_active_energy_by: 1
+            hist: hist
+            bit_distribution: bit_distribution
+            bit_flip_probability: sum(prob * (1 - prob) for prob in bit_distribution)
+                / len(bit_distribution)
+        subcomponents:
+          - class: dac_r2r_ladder
+            name: DAC
+            attributes:
+                resolution: resolution
+                voltage: voltage
+                unit_capacitance: unit_capacitance
+                unit_resistance: unit_resistance
+                hist: hist
+          - name: flip_flops
+            class: flip_flop
+            attributes:
+                n_bits: resolution
+        actions:
+          - name: convert
+            subcomponents:
+              - name: "DAC"
+                actions:
+                  - name: convert
+                    arguments: {}
+                    energy_scale: scale_x2x_energy_by * scale_active_energy_by
+              - name: "flip_flops"
+                actions:
+                  - name: read
+                    energy_scale: bit_flip_probability * scale_active_energy_by
+          - name: write
+            subcomponents: []
+          - name: update
+            subcomponents: []
+          - name: read
+            subcomponents: []
+          - name: leak
+            subcomponents:
+              - name: "DAC"
+                actions:
+                  - name: leak
+              - name: "flip_flops"
+                actions:
+                  - name: leak
+          - name: read
+            subcomponents:
+              - name: "DAC"
+                actions:
+                  - name: convert
+                    arguments: {}
+                    energy_scale: scale_x2x_energy_by * scale_active_energy_by
+              - name: "flip_flops"
+                actions:
+                  - name: read
+                    energy_scale: bit_flip_probability * scale_active_energy_by
+      - name: dac_c2c_ladder_compound
+        attributes:
+            resolution: resolution
+            voltage: voltage
+            unit_capacitance: 1e-12
+            unit_resistance: 5e3
+            zero_between_values: zero_between_values
+            scale_x2x_energy_by: 1
+            scale_active_energy_by: 1
+            hist: hist
+            bit_distribution: bit_distribution
+            bit_flip_probability: sum(prob * (1 - prob) for prob in bit_distribution)
+                / len(bit_distribution)
+        subcomponents:
+          - class: dac_c2c_ladder
+            name: DAC
+            attributes:
+                resolution: resolution
+                voltage: voltage
+                unit_capacitance: unit_capacitance
+                unit_resistance: unit_resistance
+                hist: hist
+          - name: flip_flops
+            class: flip_flop
+            attributes:
+                n_bits: resolution
+        actions:
+          - name: convert
+            subcomponents:
+              - name: "DAC"
+                actions:
+                  - name: convert
+                    arguments: {}
+                    energy_scale: scale_x2x_energy_by * scale_active_energy_by
+              - name: "flip_flops"
+                actions:
+                  - name: read
+                    energy_scale: bit_flip_probability * scale_active_energy_by
+          - name: write
+            subcomponents: []
+          - name: update
+            subcomponents: []
+          - name: read
+            subcomponents: []
+          - name: leak
+            subcomponents:
+              - name: "DAC"
+                actions:
+                  - name: leak
+              - name: "flip_flops"
+                actions:
+                  - name: leak
+          - name: read
+            subcomponents:
+              - name: "DAC"
+                actions:
+                  - name: convert
+                    arguments: {}
+                    energy_scale: scale_x2x_energy_by * scale_active_energy_by
+              - name: "flip_flops"
+                actions:
+                  - name: read
+                    energy_scale: bit_flip_probability * scale_active_energy_by
+      - name: zero_comparator
+        attributes:
+            n_comparators: "must_specify"
+            n_bits: "must_specify"
+            n_flags_store: "must_specify"
+            include_n_zeros_counter: true
+            technology: "must_specify"
+            dynamic_energy_scale: 1
+            leakage_energy_scale: 1
+        subcomponents:
+          - name: comparator
+            class: aladdin_comparator
+            attributes:
+                datawidth: n_bits
+                technology: technology
+                n_instances: n_comparators
+          - name: flip_flop
+            class: flip_flop
+            attributes:
+                n_bits: 1
+                technology: technology
+                n_instances: n_flags_store
+          - name: zeros_counter
+            class: aladdin_counter
+            attributes:
+                n_bits: ceil(log2(n_flags_store))
+                n_instances: 1
+                technology: technology
+            area_scale: include_n_zeros_counter
+        actions:
+          - name: write
+            subcomponents: []
+          - name: update
+            subcomponents: []
+          - name: read
+            subcomponents: []
+          - name: leak
+            subcomponents:
+              - name: "comparator"
+                actions:
+                  - name: leak
+                    energy_scale: leakage_energy_scale
+              - name: "flip_flop"
+                actions:
+                  - name: leak
+                    energy_scale: leakage_energy_scale
+              - name: zeros_counter
+                actions:
+                  - name: leak
+                    energy_scale: include_n_zeros_counter * 0.5 * leakage_energy_scale
+          - name: read
+            subcomponents:
+              - name: "comparator"
+                actions:
+                  - name: read
+                    energy_scale: dynamic_energy_scale
+              - name: "flip_flop"
+                actions:
+                  - name: read
+                    energy_scale: dynamic_energy_scale
+              - name: zeros_counter
+                actions:
+                  - name: read
+                    energy_scale: include_n_zeros_counter * 0.5 * dynamic_energy_scale
+mapping: []
+mapper:
+    optimization_metrics:
+      - edp
+    version: '0.4'
+    live_status: false
+    num_threads: 1
+    search_size: 10000
+    victory_condition: 100
+    timeout: 10000
+    max_permutations_per_if_visit: 16
+    algorithm: random_pruned
+    max_temporal_loops_in_a_mapping: 14
+    diagnostics: false
+    out_prefix: timeloop-mapper
+    optimization_metric: []
+    sync_interval: null
+    log_interval: 1
+    log_oaves: false
+    log_oaves_mappings: false
+    log_stats: false
+    log_suboptimal: false
+    penalize_consecutive_bypass_fails: false
+    emit_whoop_nest: false
+    filter_revisits: false
+mapspace:
+    version: '0.4'
+    template: uber
+globals:
+    version: '0.4'
+    environment_variables:
+        TIMELOOP_OUTPUT_STAT_SCIENTIFIC: 1
+        TIMELOOP_OUTPUT_STAT_DEFAULT_FLOAT: 0
+        TIMELOOP_HIDE_INCONSEQUENTIAL_STATS: 0
+    expression_custom_functions:
+      - /home/workspace/models/include/slicing_encoding.py
+    accelergy_plug_ins:
+      - /home/workspace/models/components/accelergy_plug_ins
